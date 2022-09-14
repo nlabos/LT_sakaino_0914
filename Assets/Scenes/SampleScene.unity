@@ -340,6 +340,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stick2
       objectReference: {fileID: 0}
+    - target: {fileID: 4034634423848398977, guid: fbb9f4da9aa77ab4dab3663a19e499a7,
+        type: 3}
+      propertyPath: m_TagString
+      value: Stick
+      objectReference: {fileID: 0}
     - target: {fileID: 4034634424150637902, guid: fbb9f4da9aa77ab4dab3663a19e499a7,
         type: 3}
       propertyPath: m_LocalScale.y
@@ -819,6 +824,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stick3
       objectReference: {fileID: 0}
+    - target: {fileID: 4034634423848398977, guid: fbb9f4da9aa77ab4dab3663a19e499a7,
+        type: 3}
+      propertyPath: m_TagString
+      value: Stick
+      objectReference: {fileID: 0}
     - target: {fileID: 4034634423848398983, guid: fbb9f4da9aa77ab4dab3663a19e499a7,
         type: 3}
       propertyPath: m_IsTrigger
@@ -906,7 +916,7 @@ GameObject:
   - component: {fileID: 1247088175}
   m_Layer: 0
   m_Name: Hand
-  m_TagString: Untagged
+  m_TagString: hand
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -995,6 +1005,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7071283759064f74eaa42ebacf6954a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stick: {fileID: 1247088170}
 --- !u!1 &1377417736
 GameObject:
   m_ObjectHideFlags: 0
@@ -1117,7 +1128,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.6
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1486848953
 MeshRenderer:
@@ -1172,7 +1183,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1486848951}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 6, z: 0}
+  m_LocalPosition: {x: 0, y: 6, z: 2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1193,7 +1204,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!1 &1487953897
 GameObject:
   m_ObjectHideFlags: 0
@@ -1443,6 +1454,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stick5
       objectReference: {fileID: 0}
+    - target: {fileID: 4034634423848398977, guid: fbb9f4da9aa77ab4dab3663a19e499a7,
+        type: 3}
+      propertyPath: m_TagString
+      value: Stick
+      objectReference: {fileID: 0}
     - target: {fileID: 4034634424150637903, guid: fbb9f4da9aa77ab4dab3663a19e499a7,
         type: 3}
       propertyPath: m_Size.x
@@ -1577,6 +1593,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stick4
       objectReference: {fileID: 0}
+    - target: {fileID: 4034634423848398977, guid: fbb9f4da9aa77ab4dab3663a19e499a7,
+        type: 3}
+      propertyPath: m_TagString
+      value: Stick
+      objectReference: {fileID: 0}
     - target: {fileID: 4034634424150637903, guid: fbb9f4da9aa77ab4dab3663a19e499a7,
         type: 3}
       propertyPath: m_Size.x
@@ -1710,36 +1731,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Stick1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4034634423848398977, guid: fbb9f4da9aa77ab4dab3663a19e499a7,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4034634423848398983, guid: fbb9f4da9aa77ab4dab3663a19e499a7,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4034634424150637902, guid: fbb9f4da9aa77ab4dab3663a19e499a7,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4034634424150637903, guid: fbb9f4da9aa77ab4dab3663a19e499a7,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4034634424150637903, guid: fbb9f4da9aa77ab4dab3663a19e499a7,
-        type: 3}
-      propertyPath: m_Size.z
-      value: 0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 4034634424150637903, guid: fbb9f4da9aa77ab4dab3663a19e499a7,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 1.8
       objectReference: {fileID: 0}
     - target: {fileID: 7633439289621326515, guid: fbb9f4da9aa77ab4dab3663a19e499a7,
         type: 3}

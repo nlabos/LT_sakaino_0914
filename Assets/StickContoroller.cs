@@ -6,6 +6,7 @@ public class StickContoroller : MonoBehaviour
 {
     public Transform player;
     public float speed;
+    bool TF;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,7 +16,14 @@ public class StickContoroller : MonoBehaviour
     // Update is called once per frame
     void Controller(Collision colision)
     {
-        if(colision.gameObject.tag == "stick")
+        if(colision.gameObject.tag == "hand")
+        {
+            TF = true;
+        }
+    }
+    void Update()
+    {
+        if (TF == true)
         {
             if (Input.GetKey(KeyCode.W))
             {
@@ -34,9 +42,6 @@ public class StickContoroller : MonoBehaviour
                 player.Rotate(0, -10f, 0);
             }
         }
-    }
-    void Update()
-    {
-        
+        TF = false;
     }
 }
