@@ -16,13 +16,13 @@ public class HandController : MonoBehaviour
     void Update()
     {
         hand = gameObject.transform.position;
-        if(Input.GetKey(KeyCode.E))
+        if(Input.GetKeyDown(KeyCode.E))
         {
-            hand.x += 1;
+            hand.x += 4;
         }
-        if(Input.GetKey(KeyCode.Q))
+        if(Input.GetKeyDown(KeyCode.Q))
         {
-            hand.x -= 1;
+            hand.x -= 4;
         }
         gameObject.transform.position = hand;
     }

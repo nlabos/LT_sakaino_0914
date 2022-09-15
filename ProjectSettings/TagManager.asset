@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Stick
   - hand
+  - Ball
   layers:
   - Default
   - TransparentFX
