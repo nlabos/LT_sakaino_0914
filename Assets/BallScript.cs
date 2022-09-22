@@ -18,12 +18,12 @@ public class BallScript : MonoBehaviour
     {
         if(other.CompareTag("Goal1"))
         {
-            Score1.Score1++;
+            Score1.score++;
 
         }
         else if(other.CompareTag("Goal2"))
         {
-            Score2.Score2++;
+            Score2.score++;
         }
         
     }

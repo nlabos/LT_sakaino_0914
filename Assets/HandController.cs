@@ -18,11 +18,11 @@ public class HandController : MonoBehaviour
         hand = gameObject.transform.position;
         if(Input.GetKeyDown(KeyCode.E))
         {
-            hand.x += 4;
+            hand.x += 8;
         }
         if(Input.GetKeyDown(KeyCode.Q))
         {
-            hand.x -= 4;
+            hand.x -= 8;
         }
         gameObject.transform.position = hand;
     }
